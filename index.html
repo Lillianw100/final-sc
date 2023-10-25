@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suzanne Collins Website</title> 
+<!-- <link rel="stylesheet" href="styles.css">  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> 
+<link href='https://fonts.googleapis.com/css?family=Hurricane' rel='stylesheet'>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    *
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family:'Courier New', Courier, monospace;
+}
+#nav-bar 
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-color: black;
+    padding: 0 !important;
+}
+.navbar-nav 
+{
+    padding: 0 10px;
+    margin-left: auto;
+    color: white;
+}
+.navbar-nav a 
+{
+    color: white;
+}
+.navbar-brand {
+    color: white;
+}
+.hero {
+  /* background-image: url(images/max-saeling-9_OejvA7ooI-unsplash.jpg); */
+  background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity:0.5;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 50px;
+    text-transform: uppercase;
+          
+      }
+  .photo {
+    padding-left: 800px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    position:sticky;
+    width: 95%;
+    height: 90%;
+  }
+
+  .centered {
+  position:absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-family: hurricane;
+  font-size: 60px;
+  color: white;
+      }
+
+.container1 {
+  /* max-width: fit-content; */
+  background-color: black;
+  box-sizing:border-box;
+  border:black;
+  border-style:solid;
+}
+.centered1 {
+  position:absolute;
+  top: 43%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-family: hurricane;
+  font-size: 48px;
+  color: white;
+      }
+  .container2 {
+    background-color: black;
+    background-image: url(images/max-saeling-9_OejvA7ooI-unsplash.png);
+    border:black;
+    border-style: solid;
+  }
+  .container3 {
+    background-color: black;
+    border:black;
+    border-style: solid;
+  }
+
+  .overlay {
+  position:absolute;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.overlay2 {
+  position:absolute;
+  margin-left: 70px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 88%;
+  width: 90%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+}
+.overlay3 {
+  position:absolute;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 92%;
+  width: 75%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.overlay4 {
+  position:absolute;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-right: 60px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.text2 {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text2 a:link {
+    color: white;
+    text-decoration: white;
+}
+.text3 {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text3 a:link {
+    color: white;
+    text-decoration: white;
+}
+.text4 {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text4 a:link {
+    color: white;
+    text-decoration: white;
+}
+.overlay:hover {
+  opacity: 1;
+  /* display: block; */
+}
+.overlay2:hover  {
+  opacity: 1;
+  display: block;
+}
+.overlay3:hover {
+  opacity: 1;
+  display: block;
+}
+.overlay4:hover  {
+  opacity: 1;
+  display: block;
+}
+.text1 {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 43%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text1 a:link {
+    color: white;
+    text-decoration: white;
+}
+.cmb {
+  margin:10px;
+    padding-left: 40px;
+    padding-bottom:40px;
+    width:78%;
+    padding-top:28px;
+    display: block;
+    backface-visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.yoj {
+  margin:10px;
+    padding-left: 40px;
+    padding-bottom:3px;
+    width:85%;
+    padding-top:30px;
+    display: block;
+    backface-visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+  .hgs {
+    margin:10px;
+    padding-left: 40px;
+    width:60%;
+    padding-top:20px;
+    display: block;
+    backface-visibility: hidden;
+    transition: all 0.5s ease 0s;
+  }
+  .btn-btn-dark {
+    color:black;
+    border:white;
+    border-style:solid;
+    opacity:0;
+  }
+  .gs {
+    margin:10px;
+    padding-left: 150px;
+    padding-top:30px;
+    padding-bottom:20px;
+  }
+.container4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+
+}
+img {
+  max-width: 100%;
+}
+.image {
+  flex-basis: 100%;
+  
+}
+.img-fluid {
+  padding-left:35px;
+  padding-bottom:100px;
+  padding-top: 0px;
+  padding-right:0px;
+}
+.text {
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right:10px;
+  color:white;
+  font-family:'Courier New', Courier, monospace;
+}
+.birdpic {
+  height: 100%;
+  border:gold;
+  border-width:10px;
+}
+.dbook {
+  height:80%;
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:1px;
+  width:30%;
+  display:flex;
+}
+.top-left {
+  color: white;
+  font-size:35px;
+  position:relative;
+  left:1%;
+  text-align:center;
+  font-style:bold;
+}
+.top-left1 {
+  color: white;
+  font-size:35px;
+  position:relative;
+  left:1%;
+  text-align:left;
+  font-style:bold;
+}
+.top-left2 {
+  color: white;
+  font-size:35px;
+  position:relative;
+  left:1%;
+  text-align:left;
+  font-style:bold;
+}
+
+
+</style>
+<body>
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WELCOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/works.html">WORKS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BIOGRAPHY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">INTERVIEW</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+</section>
+<!----------------banner section--------------->
+<section id="banner">
+  <div class="hero" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <div class="centered">SUZANNE COLLINS</div>
+    <img src="images/suzanne@@._V1_.jpg" class="photo" alt="suzanne">
+    </div>
+    <div class="container1">
+       <div class="row">
+         <div class="col-lg-12" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+          <div class="centered1">The Ballad of Songbirds and Snakes<br><img src="imagess/hbworkrating1.png" alt="Ballad Rating" style="width:35%"><br><p style="border:3px; border-style:solid; border-color:white; padding:10px; background-color:black; font-size:17px; font-family:'Courier New', Courier, monospace; width:120%;">"'The Ballad of Songbirds and Snakes' delivers a mesmerizing look into the life of Coriolanus Snow and the root causes of his villainous behavior. Collins once again proves that she is a master of building a fascinating world around complex characters who must grapple with the complications of chaos and control and their effects on human nature."
+<br>
+<br>
+--The Associated Press
+<br>
+<br>
+          <button type="button" class="btn btn-dark"><a href="http://127.0.0.1:5500/works.html">Learn More</a>
+          </button></p>
+        </div>
+          <img src="images/3dballad.png" class="dbook" alt="3dbook">
+        </div>
+       </div> 
+    </div>
+    <div class="container2">
+      <div class="top-left2">BOOK SERIES</div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+          <img src="images/hungergamesseries.png" class="hgs" alt="hgs">
+          <div class="overlay">
+            <div class="text1"><b>THE HUNGER GAMES SERIES</b><br><br> <br>"...brilliantly plotted and perfectly paced...a futuristic novel every bit as good and as allegorically rich as Scott Westerfeld's 'Uglies' books."
+<br>
+              --The New York Times, John Green
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" class="btn btn-dark"><a href="http://127.0.0.1:5500/works.html">Learn More</a>
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+          <img src="images/gregorseries.png" class="gs" alt="gs">
+          <div class="overlay2">
+            <div class="text2"><b>GREGOR THE OVERLANDER SERIES</b><br><br><br> "Collins does a grand job of world-building, with a fine economy of words…Unlike Gregor, who cannot wait to leave, readers will likely find [the Underland] to be a fantastically engaging place."
+<br>
+              --Publishers Weekly, STARRED REVIEW
+            <br>
+            <br>
+            <br>
+            <button type="button" class="btn btn-dark"><a href="http://127.0.0.1:5500/works.html">Learn More</a>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container3">
+      <div class="top-left1">PICTURE BOOKS</div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+          <img src="images/whencharliemcbutton.png" class="cmb" alt="cmb">
+          <div class="overlay3">
+            <div class="text3"><b>WHEN CHARLIE McBUTTON LOST POWER</b><br>"Deftly written by Suzanne Collins and nicely illustrated by Mike Lester, When Charlie McButton Lost Power is refreshingly original and moving!"
+              <br>
+                            --Midwest Book Review 
+      
+            <br>
+            <br>
+            <button type="button" class="btn btn-dark"><a href="http://127.0.0.1:5500/works.html">Learn More</a>
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+          <img src="images/yearofthejungle.png" class="yoj" alt="yoj">
+          <div class="overlay4">
+            <div class="text4"><b>YEAR OF THE JUNGLE</b><br>"Collins holds firm to her childhood memories, creating a universal story for any child whose life is disrupted by war. Important and necessary. (Picture book. 4-10)."
+
+              --Kirkus Reviews, STARRED REVIEW
+      
+            <br>
+            <br>
+            <button type="button" class="btn btn-dark"><a href="http://127.0.0.1:5500/works.html">Learn More</a>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container4">
+      <div class="top-left">ABOUT ME
+      <div class="image" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+      <img src="images/suzanne@@._V1_.jpg" class="img-fluid" alt="suzanne">
+    </div>
+  </div>
+    <div class="text">
+      <h1></h1>
+      <br>
+      <br>
+      <p style="border:3px; border-style:solid; border-color:white; padding:2px; margin-top:12px; background-color:black;">Suzanne Collins is an American television writer and novelist, author of the bestselling series The Underland Chronicles and the wildly successful Hunger Games trilogy that spawned the Lionsgate film The Hunger Games (2012) and the three subsequently announced sequels, The Hunger Games: Catching Fire (2013), The Hunger Games: Mockingjay - Part 1 (2014) and The Hunger Games: Mockingjay - Part 2 (2015). Born in Hartford, Connecticut on August 10, 1962, Collins is the daughter of a U.S. Air Force officer and was a successful television writer before turning her talents to writing novels. Currently residing in Sandy Hook, Connecticut with her husband and their two children, Suzanne Collins is Amazon.com's best-selling author of all time.
+      </p>
+      <p><i>#1 USA Today Bestseller</i></p>
+      <p><i>#1 New York Times Bestseller</i></p>
+      <p><i>#1  Wall Street Journal Bestseller</i></p>
+      <p><i>#1  Publishers Bestseller</i></p>
+    </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>  
+</body>
+</html>
